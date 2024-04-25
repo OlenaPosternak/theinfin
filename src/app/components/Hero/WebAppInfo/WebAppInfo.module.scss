@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  margin: 136px 0 128px;
+  display: flex;
+  gap: 25px;
+  z-index: 1;
+}
+.text {
+  z-index: 1;
+  background-color: $color-grey;
+  width: 113px;
+  height: 32px;
+}
+.text p {
+  color: $color-main-dark;
+  opacity: 40%;
+}
+
+.img {
+  z-index: 1;
+  object-fit: cover;
+}

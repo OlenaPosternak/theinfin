@@ -1,0 +1,5 @@
+.matrix {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(6, auto);
+}

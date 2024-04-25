@@ -1,0 +1,30 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.text_wrapper {
+  display: flex;
+  height: 264px;
+  gap: 25px;
+}
+
+.title {
+  background-color: $color-grey;
+  z-index: 1;
+  position: relative;
+  font-size: 88px;
+  letter-spacing: -0.88px;
+  line-height: 1;
+  width: 894px;
+  text-transform: uppercase;
+}
+
+.info {
+  width: 113px;
+  font-size: 12px;
+  line-height: 1.33;
+}

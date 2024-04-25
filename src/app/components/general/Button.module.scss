@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.button {
+  border: 1px solid $color-main-dark;
+  outline: none;
+  border-radius: 129px;
+  width: 223px;
+  height: 90px;
+  letter-spacing: 0.24px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+}
