@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "../app/globals.scss";
 import { SplashScreen } from "../app/components/SplashScreen/SplashScreen/SplashScreen";
 import localFont from "next/font/local";
+import { NavBar } from "./components/NavBar/NavBar";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "The INFIN",
@@ -41,7 +43,12 @@ export default function RootLayout({
         <link rel="icon" href="images/favicon.svg" sizes="any" />
       </head>
       <body className={neueFont.className}>
-        <SplashScreen>{children}</SplashScreen>
+        <Providers>
+          <SplashScreen>
+            <NavBar />
+            {children}
+          </SplashScreen>
+        </Providers>
       </body>
     </html>
   );

@@ -16,6 +16,8 @@ body {
   overflow-x: hidden;
   font-family: var(--font-neueFont);
   background-color: #c1c1c1;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 a {
@@ -38,4 +40,9 @@ li {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+
+#cursor {
+  border:1ps solid
 }
