@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.title {
+  width: 359px;
+  font-size: 62px;
+  line-height: 1.09;
+  letter-spacing: 0; //TODO:check
+  background-color: $color-grey;
+  z-index: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+
+  height: 253px;
+  border-top: 1px solid rgba(18, 18, 18, 0.12);
+  width: 951px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text_wrapper {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.text_info {
+  font-size: 20px;
+  line-height: 1.3;
+  background-color: $color-grey;
+  z-index: 1;
+}
+
+.text_title {
+  font-size: 12px;
+  min-width: 113px;
+  height: 16px;
+  background-color: $color-grey;
+  z-index: 1;
+}
+.section {
+  display: flex;
+  height: 536px;
+  justify-content: space-between;
+  margin-right: -30px;
+  margin-bottom: 160px;
+}
+
+.img {
+  border: 20px;
+  z-index: 1;
+}
