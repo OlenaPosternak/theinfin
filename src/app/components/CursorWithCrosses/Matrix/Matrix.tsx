@@ -3,7 +3,7 @@ import styles from "./Matrix.module.scss";
 
 const NUMBER_OF_CROSSES = 6;
 
-export const Matrix = ({ children }: any) => {
+export const Matrix = ({ children }: { children: React.ReactNode }) => {
   const renderMatrix = () => {
     const matrix = [];
 

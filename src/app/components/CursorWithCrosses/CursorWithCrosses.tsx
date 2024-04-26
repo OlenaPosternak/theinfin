@@ -10,10 +10,10 @@ export const CursorWithCrosses = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isPointer, setIsPointer] = useState(false);
 
-  const handleMouseMove = (e: any) => {
+  const handleMouseMove = (e: MouseEvent) => {
     setPosition({ x: e.clientX, y: e.clientY });
 
-    const target = e.target;
+    const target = e.target as HTMLElement;
 
     setIsPointer(
       window.getComputedStyle(target).getPropertyValue("cursor") ===
