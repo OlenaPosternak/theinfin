@@ -8,12 +8,21 @@ import { useParallax } from "react-scroll-parallax";
 export const NavBar = () => {
   const parallax = useParallax<HTMLAnchorElement>({
     scale: [1, 0.367],
+    translateY: ["0px", "-34px"],
     startScroll: 0,
     endScroll: 600,
   });
 
   const parallaxButton = useParallax<HTMLButtonElement>({
     scale: [1, 0.5],
+    translateY: ["0px", "-34px"],
+    startScroll: 0,
+    endScroll: 600,
+  });
+
+  const parallaxText = useParallax<HTMLParagraphElement>({
+    translateY: ["-55%", "-230%"],
+    translateX: ["-50%", "-50%"],
     startScroll: 0,
     endScroll: 600,
   });
@@ -30,6 +39,7 @@ export const NavBar = () => {
       </Link>
 
       <NavBarLinks />
+
       <div style={{ position: "relative" }}>
         <button
           type="button"
@@ -37,12 +47,14 @@ export const NavBar = () => {
           ref={parallaxButton.ref}
         ></button>
         <p
+          ref={parallaxText.ref}
           style={{
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%,-55%)",
+            transform: "translate(-50%,55%)",
             zIndex: 1,
+            textTransform: "uppercase",
           }}
         >
           contact
