@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 60px 30px 30px;
+  background-color: $color-grey;
+}
+
+.logo,
+.list {
+  background-color: $color-grey;
+  z-index: 1;
+}
+
+.list {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.logo {
+  transition: scale 600ms linear;
+}
+
+.button {
+  border: 1px solid $color-main-dark;
+  outline: none;
+  border-radius: 129px;
+  width: 223px;
+  height: 90px;
+  letter-spacing: 0.24px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+  background-color: transparent;
+}

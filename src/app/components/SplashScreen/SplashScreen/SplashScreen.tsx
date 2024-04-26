@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { SplashImages } from "../SplashScreenImages/SplashImages";
 
-export const SplashScreen = ({ children }: any) => {
+export const SplashScreen = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsloading] = useState(true);
 
   const splashRef = useRef<HTMLDivElement>(null);
