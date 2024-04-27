@@ -12,9 +12,11 @@ export const HeroInfo = () => {
           To know your true value, Help others understand theirs.
         </h1>
       </div>
-      <Button bgColor="#121212" textColor="#fff">
-        Schedule a demo
-      </Button>
+      <div className={styles.button}>
+        <Button bgColor="#121212" textColor="#fff">
+          Schedule a demo
+        </Button>
+      </div>
     </div>
   );
 };
