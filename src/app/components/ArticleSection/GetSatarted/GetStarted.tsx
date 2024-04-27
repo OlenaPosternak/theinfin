@@ -10,7 +10,7 @@ export const GetStarted = () => {
       bgColor="#FFCD00"
       number="02"
       name="Get started"
-      numberPosition="481px"
+      numberPosition="699px"
     >
       <div className={styles.wrapper}>
         <div className={styles.image_wrapper}>

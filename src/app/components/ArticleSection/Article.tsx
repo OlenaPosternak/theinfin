@@ -3,6 +3,36 @@ import styles from "./Article.module.scss";
 import { useParallax } from "react-scroll-parallax";
 
 export const Article = () => {
+  // const parallaxContainer = useParallax<HTMLDivElement>({
+  //   translateY: ["805px", "2998px"],
+  //   startScroll: 760,
+  //   endScroll: 2994,
+  // });
+
+  // const businessContainer = useParallax<HTMLDivElement>({
+  //   translateY: ["0px", "-1655px"],
+  //   startScroll: 760,
+  //   endScroll: 2298,
+  // });
+
+  // const individualContainer = useParallax<HTMLDivElement>({
+  //   translateY: ["0px", "-1455px"],
+  //   startScroll: 1140,
+  //   endScroll: 2994,
+  // });
+
+  // const reviewsContainer = useParallax<HTMLDivElement>({
+  //   translateY: ["0px", "-955px"],
+  //   startScroll: 2080,
+  //   endScroll: 2970,
+  // });
+
+  // const startedContainer = useParallax<HTMLDivElement>({
+  //   translateY: ["0px", "-696px"],
+  //   startScroll: 3100,
+  //   endScroll: 3994,
+  // });
+
   const parallaxContainer = useParallax<HTMLDivElement>({
     translateY: ["805px", "2998px"],
     startScroll: 760,
@@ -17,19 +47,19 @@ export const Article = () => {
 
   const individualContainer = useParallax<HTMLDivElement>({
     translateY: ["0px", "-1455px"],
-    startScroll: 1140,
+    startScroll: 1440,
     endScroll: 2994,
   });
 
   const reviewsContainer = useParallax<HTMLDivElement>({
     translateY: ["0px", "-955px"],
-    startScroll: 2080,
+    startScroll: 2280,
     endScroll: 2970,
   });
 
   const startedContainer = useParallax<HTMLDivElement>({
     translateY: ["0px", "-696px"],
-    startScroll: 3100,
+    startScroll: 2800,
     endScroll: 3994,
   });
 

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { InfoWrapper } from "../../general/InfoWrapper/InfoWrapper";
-import styles from "./Business.module.scss";
 import { ArticleWrapper } from "../../ArticleSection/ArticleWrapper/ArticleWrapper";
 import { Button } from "../../general/Button";
+import styles from "./Business.module.scss";
 
 export const Business = () => {
   return (

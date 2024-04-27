@@ -7,6 +7,7 @@ interface ArticleProps {
   bgColor?: string;
   name: string;
   numberPosition?: string;
+  numberColor?: string;
 }
 
 export const ArticleWrapper = ({
@@ -15,10 +16,14 @@ export const ArticleWrapper = ({
   number,
   name,
   numberPosition,
+  numberColor,
 }: ArticleProps) => {
   return (
     <article className={styles.article} style={{ backgroundColor: bgColor }}>
-      <span className={styles.number} style={{ left: numberPosition }}>
+      <span
+        className={styles.number}
+        style={{ left: numberPosition, color: numberColor }}
+      >
         {number}
       </span>
       <p className={styles.name}>{name}</p>

@@ -2,15 +2,21 @@
   position: relative;
   overflow: visible;
   height: 2994px;
-  //   padding-bottom: 805px;
+  // padding-bottom: 805px;
+  // padding-top: 696px;
+
   border: 1px solid red;
   background-color: aquamarine;
+
+  //
+  display: flex;
+  align-items: flex-start;
 }
 .wrapper {
   height: 805px;
   transform: translate(0px, 2994px);
   position: absolute;
-  bottom: 2994px;
+  bottom: 2880px;
   background-color: red;
   z-index: 1;
 }

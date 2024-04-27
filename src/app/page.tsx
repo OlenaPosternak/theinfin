@@ -8,16 +8,21 @@ import { WhyChooseTheInfin } from "./components/WhyChooseTheInfin/WhyChooseTheIn
 import { Business } from "./components/ArticleSection/Business/Business";
 import { Individuals } from "./components/ArticleSection/Individuals/Individuals";
 import { GetStarted } from "./components/ArticleSection/GetSatarted/GetStarted";
+import { Reviews } from "./components/ArticleSection/Reviews/Reviews";
+import { VideoSection } from "./components/VideoSection/VideoSectiom";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <CursorWithCrosses />
       <Hero />
+      <VideoSection />
       <WhyChooseTheInfin />
-      <Business />
+      {/* TODO - move to teh articles */}
+      {/* <Business />
       <Individuals />
       <GetStarted />
+      <Reviews /> */}
       <Article />
     </main>
   );
