@@ -35,32 +35,32 @@ export const Article = () => {
 
   const parallaxContainer = useParallax<HTMLDivElement>({
     translateY: ["805px", "2998px"],
-    startScroll: 760,
-    endScroll: 2994,
+    startScroll: 1960,
+    endScroll: 2998,
   });
 
   const businessContainer = useParallax<HTMLDivElement>({
-    translateY: ["0px", "-1655px"],
-    startScroll: 760,
-    endScroll: 2298,
+    translateY: ["0px", "-2998px"],
+    startScroll: 1960,
+    endScroll: 3380,
   });
 
   const individualContainer = useParallax<HTMLDivElement>({
-    translateY: ["0px", "-1455px"],
-    startScroll: 1440,
-    endScroll: 2994,
+    translateY: ["0px", "-2099px"],
+    startScroll: 2290,
+    endScroll: 3300,
   });
 
   const reviewsContainer = useParallax<HTMLDivElement>({
-    translateY: ["0px", "-955px"],
-    startScroll: 2280,
-    endScroll: 2970,
+    translateY: ["0px", "-1200px"],
+    startScroll: 2560,
+    endScroll: 3870,
   });
 
   const startedContainer = useParallax<HTMLDivElement>({
-    translateY: ["0px", "-696px"],
-    startScroll: 2800,
-    endScroll: 3994,
+    // translateY: ["0px", "-696px"],
+    startScroll: 4100,
+    endScroll: 5994,
   });
 
   return (
