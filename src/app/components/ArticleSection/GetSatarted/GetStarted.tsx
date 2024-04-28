@@ -8,7 +8,7 @@ export const GetStarted = () => {
   return (
     <ArticleWrapper
       bgColor="#FFCD00"
-      number="02"
+      number="04"
       name="Get started"
       numberPosition="699px"
     >

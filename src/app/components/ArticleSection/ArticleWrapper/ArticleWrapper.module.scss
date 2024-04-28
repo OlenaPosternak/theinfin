@@ -4,12 +4,10 @@
   padding: 30px;
   height: 696px;
   width: 1416px;
-  //   border: 1px solid red;
   border-radius: 30px;
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
-  // position: relative;
 }
 
 .name {
@@ -25,7 +23,7 @@
   font-size: 14px;
   font-weight: 500;
   position: absolute;
-  top: 30px;
+  top: 15px;
   left: 30px;
   color: $color-main-dark;
 }
