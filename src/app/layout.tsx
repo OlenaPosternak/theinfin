@@ -4,6 +4,7 @@ import { SplashScreen } from "../app/components/SplashScreen/SplashScreen/Splash
 import localFont from "next/font/local";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Providers } from "./providers";
+import { Footer } from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "The INFIN",
@@ -47,7 +48,7 @@ export default function RootLayout({
           <SplashScreen>
             <NavBar />
             {children}
-            <footer style={{ height: "777px", background: "white" }}></footer>
+            <Footer />
           </SplashScreen>
         </Providers>
       </body>

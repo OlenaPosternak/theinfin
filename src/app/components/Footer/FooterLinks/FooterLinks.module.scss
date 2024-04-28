@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1029px;
+}
+
+.title {
+  color: $color-main-dark;
+  opacity: 0.4;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.3;
+}
