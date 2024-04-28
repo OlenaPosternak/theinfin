@@ -8,6 +8,7 @@ interface ArticleProps {
   name: string;
   numberPosition?: string;
   numberColor?: string;
+  nameColor?: string;
 }
 
 export const ArticleWrapper = ({
@@ -17,6 +18,7 @@ export const ArticleWrapper = ({
   name,
   numberPosition,
   numberColor,
+  nameColor,
 }: ArticleProps) => {
   return (
     <article className={styles.article} style={{ backgroundColor: bgColor }}>
@@ -26,7 +28,9 @@ export const ArticleWrapper = ({
       >
         {number}
       </span>
-      <p className={styles.name}>{name}</p>
+      <p className={styles.name} style={{ color: nameColor }}>
+        {name}
+      </p>
       {children}
     </article>
   );

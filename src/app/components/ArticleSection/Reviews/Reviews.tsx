@@ -13,6 +13,7 @@ export const Reviews = () => {
       numberColor="white"
       name="Reviews"
       numberPosition="30px"
+      nameColor="white"
     >
       <div className={styles.section_wrapper}>
         <div className={styles.info}>

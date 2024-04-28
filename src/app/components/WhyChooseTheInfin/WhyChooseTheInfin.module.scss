@@ -12,7 +12,15 @@
   width: 359px;
   font-size: 62px;
   line-height: 1.09;
-  letter-spacing: 0; //TODO:check
+  letter-spacing: 0;
+  position: relative;
   z-index: 1;
   margin-bottom: 318px;
+  background-color: $color-grey;
+}
+
+.text_wrapper {
+  background-color: $color-grey;
+  position: relative;
+  z-index: 1;
 }
