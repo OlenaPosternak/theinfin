@@ -141,13 +141,13 @@ export const useNavBarParallax = () => {
 
   const scrollToIndividuals = () => {
     window.scrollTo({
-      top: 2400,
+      top: 3000,
       behavior: "smooth",
     });
   };
   const scrollToReviews = () => {
     window.scrollTo({
-      top: 2900,
+      top: 3300,
       behavior: "smooth",
     });
   };

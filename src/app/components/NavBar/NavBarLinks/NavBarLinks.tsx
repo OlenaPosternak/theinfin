@@ -18,28 +18,20 @@ export const NavBarLinks = () => {
 
   return (
     <ul className={styles.list}>
-      <li ref={parallaxHome.ref}>
+      <li ref={parallaxHome.ref} className={styles.link}>
         <Link href="/">Home</Link>
       </li>
-      <li ref={parallaxBusinesses.ref}>
-        <Link href="/" onClick={scrollToBusiness}>
-          For Businesses
-        </Link>
+      <li ref={parallaxBusinesses.ref} className={styles.link}>
+        <p onClick={scrollToBusiness}>For Businesses</p>
       </li>
-      <li ref={parallaxIndividuals.ref}>
-        <Link href="/" onClick={scrollToIndividuals}>
-          For Individuals
-        </Link>
+      <li ref={parallaxIndividuals.ref} className={styles.link}>
+        <p onClick={scrollToIndividuals}>For Individuals</p>
       </li>
-      <li ref={parallaxCapitalism.ref}>
-        <Link href="/" onClick={scrollToReviews}>
-          Capitalism 2.0
-        </Link>
+      <li ref={parallaxCapitalism.ref} className={styles.link}>
+        <p onClick={scrollToReviews}>Capitalism 2.0</p>
       </li>
-      <li ref={parallaxMarketing.ref}>
-        <Link href="/" onClick={scrollTosStarted}>
-          Marketing Efforts
-        </Link>
+      <li ref={parallaxMarketing.ref} className={styles.link}>
+        <p onClick={scrollTosStarted}>Marketing Efforts</p>
       </li>
     </ul>
   );
