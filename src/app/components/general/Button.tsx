@@ -1,6 +1,12 @@
+import { ReactNode } from "react";
 import styles from "./Button.module.scss";
 
-export const Button = ({ children, bgColor = "", textColor = "" }: any) => {
+interface ButtonProps {
+  children: ReactNode;
+  bgColor?: string;
+  textColor?: string;
+}
+export const Button = ({ children, bgColor, textColor }: ButtonProps) => {
   const buttonStyles = {
     backgroundColor: bgColor,
     color: textColor,

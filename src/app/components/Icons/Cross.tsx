@@ -1,0 +1,18 @@
+export const Cross = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      className={className}
+      width="39"
+      height="39"
+      viewBox="0 0 39 39"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19.3918 0V19.3918M19.3918 19.3918V38.7835M19.3918 19.3918H38.7835M19.3918 19.3918L0 19.3918"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+};

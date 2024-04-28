@@ -1,0 +1,16 @@
+.pin_space {
+  position: relative;
+  overflow: visible;
+  height: 2994px;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  height: 805px;
+  transform: translate(0px, 2994px);
+  position: absolute;
+  bottom: 2994px;
+  z-index: 1;
+}

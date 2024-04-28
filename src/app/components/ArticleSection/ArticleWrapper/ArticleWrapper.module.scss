@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+
+.article {
+  padding: 30px;
+  height: 696px;
+  width: 1416px;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.name {
+  position: absolute;
+  top: 11px;
+  right: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: $color-main-dark;
+}
+.number {
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  color: $color-main-dark;
+}

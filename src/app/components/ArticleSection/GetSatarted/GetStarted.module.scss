@@ -1,0 +1,43 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image_wrapper {
+  height: 636px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.roteted_cross {
+  transform: rotate(180deg);
+}
+
+.title_wrapper {
+  width: 782px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.small_title {
+  font-size: 14px;
+  line-height: 1.28;
+  color: $color-black;
+}
+
+.title {
+  margin: 20px 0 30px;
+  font-size: 120px;
+  line-height: 0.92;
+  letter-spacing: -2px;
+  color: $color-main-dark;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  width: 260px;
+}

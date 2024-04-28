@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.cross_wrapper {
+  color: $color-dark-grey-03;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.cross_row {
+  display: flex;
+  gap: 14px;
+}
+.cross {
+  stroke: currentColor;
+}
