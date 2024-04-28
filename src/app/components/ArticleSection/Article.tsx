@@ -52,13 +52,13 @@ export const Article = () => {
   });
 
   const reviewsContainer = useParallax<HTMLDivElement>({
-    translateY: ["0px", "-1320px"],
+    translateY: ["0px", "-1200px"],
     startScroll: 2400,
     endScroll: 3300,
   });
 
   const startedContainer = useParallax<HTMLDivElement>({
-    translateY: ["0px", "-601px"],
+    translateY: ["0px", "-401px"],
     startScroll: 2900,
     endScroll: 3300,
   });

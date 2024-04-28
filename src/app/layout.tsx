@@ -47,7 +47,7 @@ export default function RootLayout({
           <SplashScreen>
             <NavBar />
             {children}
-            <footer style={{ height: "7777px", background: "white" }}></footer>
+            <footer style={{ height: "777px", background: "white" }}></footer>
           </SplashScreen>
         </Providers>
       </body>

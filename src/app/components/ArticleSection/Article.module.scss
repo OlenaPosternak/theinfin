@@ -2,17 +2,14 @@
   position: relative;
   overflow: visible;
   height: 2994px;
-  // padding-bottom: 805px;
-  // padding-top: 696px;
-
+  justify-content: center;
   border: 1px solid red;
-  background-color: aquamarine;
-
-  //
-  display: flex;
-  align-items: flex-start;
+  // background-color: aquamarine;
 }
 .wrapper {
+  display: flex;
+  justify-content: center;
+  left: 50%;
   height: 805px;
   transform: translate(0px, 2994px);
   position: absolute;
