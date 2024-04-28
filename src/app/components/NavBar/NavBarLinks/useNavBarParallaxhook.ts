@@ -1,7 +1,7 @@
 import { useParallax } from "react-scroll-parallax";
 import { useState, useEffect } from "react";
 
-export const useNavBarParalax = () => {
+export const useNavBarParallax = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const homeScrollValue = () => {
@@ -86,7 +86,6 @@ export const useNavBarParalax = () => {
       return -68;
     }
   };
-  console.log(homeScrollValue);
 
   const parallaxHome = useParallax<HTMLLIElement>({
     translateX: ["0px", `${homeScrollValue()}px`],
@@ -133,7 +132,31 @@ export const useNavBarParalax = () => {
     };
   }, []);
 
-  console.log(scrollPosition);
+  const scrollToBusiness = () => {
+    window.scrollTo({
+      top: 2290,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToIndividuals = () => {
+    window.scrollTo({
+      top: 2400,
+      behavior: "smooth",
+    });
+  };
+  const scrollToReviews = () => {
+    window.scrollTo({
+      top: 2900,
+      behavior: "smooth",
+    });
+  };
+  const scrollTosStarted = () => {
+    window.scrollTo({
+      top: 4100,
+      behavior: "smooth",
+    });
+  };
 
   return {
     parallaxHome,
@@ -141,5 +164,9 @@ export const useNavBarParalax = () => {
     parallaxIndividuals,
     parallaxCapitalism,
     parallaxMarketing,
+    scrollToBusiness,
+    scrollToIndividuals,
+    scrollToReviews,
+    scrollTosStarted,
   };
 };

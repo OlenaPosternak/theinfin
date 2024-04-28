@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./NavBarLinks.module.scss";
-import { useNavBarParalax } from "./useNavBarParalaxhook";
+import { useNavBarParallax } from "./useNavBarParallaxhook";
 
 export const NavBarLinks = () => {
   const {
@@ -10,7 +10,11 @@ export const NavBarLinks = () => {
     parallaxIndividuals,
     parallaxCapitalism,
     parallaxMarketing,
-  } = useNavBarParalax();
+    scrollToBusiness,
+    scrollToIndividuals,
+    scrollToReviews,
+    scrollTosStarted,
+  } = useNavBarParallax();
 
   return (
     <ul className={styles.list}>
@@ -18,16 +22,24 @@ export const NavBarLinks = () => {
         <Link href="/">Home</Link>
       </li>
       <li ref={parallaxBusinesses.ref}>
-        <Link href="/">For Businesses</Link>
+        <Link href="/" onClick={scrollToBusiness}>
+          For Businesses
+        </Link>
       </li>
       <li ref={parallaxIndividuals.ref}>
-        <Link href="/">For Individuals</Link>
+        <Link href="/" onClick={scrollToIndividuals}>
+          For Individuals
+        </Link>
       </li>
       <li ref={parallaxCapitalism.ref}>
-        <Link href="/">Capitalism 2.0</Link>
+        <Link href="/" onClick={scrollToReviews}>
+          Capitalism 2.0
+        </Link>
       </li>
       <li ref={parallaxMarketing.ref}>
-        <Link href="/">Marketing Efforts</Link>
+        <Link href="/" onClick={scrollTosStarted}>
+          Marketing Efforts
+        </Link>
       </li>
     </ul>
   );
