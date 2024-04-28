@@ -7,9 +7,9 @@
   //   border: 1px solid red;
   border-radius: 30px;
   margin: 0 auto;
-  //   position: absolute;
-
-  position: relative;
+  position: absolute;
+  transform: translateX(-50%);
+  // position: relative;
 }
 
 .name {

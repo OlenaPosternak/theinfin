@@ -3,8 +3,6 @@
   overflow: visible;
   height: 2994px;
   justify-content: center;
-  border: 1px solid red;
-  // background-color: aquamarine;
 }
 .wrapper {
   display: flex;
@@ -14,16 +12,5 @@
   transform: translate(0px, 2994px);
   position: absolute;
   bottom: 2994px;
-  background-color: red;
   z-index: 1;
-}
-
-.article {
-  height: 696px;
-  width: 1416px;
-  border: 1px solid red;
-  border-radius: 30px;
-  font-size: 30px;
-  margin: 0 auto;
-  position: absolute;
 }

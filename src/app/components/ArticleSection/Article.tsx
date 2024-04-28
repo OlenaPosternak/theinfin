@@ -1,6 +1,10 @@
 "use client";
 import styles from "./Article.module.scss";
 import { useParallax } from "react-scroll-parallax";
+import { Business } from "./Business/Business";
+import { Individuals } from "./Individuals/Individuals";
+import { GetStarted } from "./GetSatarted/GetStarted";
+import { Reviews } from "./Reviews/Reviews";
 
 export const Article = () => {
   // const parallaxContainer = useParallax<HTMLDivElement>({
@@ -35,6 +39,7 @@ export const Article = () => {
 
   const parallaxContainer = useParallax<HTMLDivElement>({
     translateY: ["805px", "2998px"],
+    translateX: ["-50%", "-50%"],
     startScroll: 1960,
     endScroll: 2998,
   });
@@ -67,31 +72,30 @@ export const Article = () => {
     <section className={`${styles.pin_space} container`}>
       <div className={styles.wrapper} ref={parallaxContainer.ref}>
         <article className={styles.article} ref={businessContainer.ref}>
-          01
+          <Business />
         </article>
         <article
           ref={individualContainer.ref}
           className={styles.article}
-          style={{ background: "black", marginTop: "35px" }}
+          style={{ marginTop: "35px" }}
         >
-          02
+          <Individuals />
         </article>
         <article
           ref={reviewsContainer.ref}
           className={styles.article}
-          style={{ background: "green", marginTop: "70px" }}
+          style={{ marginTop: "70px" }}
         >
-          03
+          <Reviews />
         </article>
         <article
           ref={startedContainer.ref}
           className={styles.article}
           style={{
-            background: "yellow",
             marginTop: "105px",
           }}
         >
-          04
+          <GetStarted />
         </article>
       </div>
     </section>
